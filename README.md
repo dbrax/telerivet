@@ -1,6 +1,6 @@
-# Telerivet is an innovative mobile messaging platform that instantly connects businesses and organizations with their customers, employees, and community. No servers, programmers, expensive contracts, or shortcodes required
+## Telerivet is an innovative mobile messaging platform that instantly connects businesses and organizations with their customers, employees, and community. No servers, programmers, expensive contracts, or shortcodes required
 
-# This package helps you to easily get started with integrating with Telerivet service via API made for laravel developers
+## This package helps you to easily get started with integrating with Telerivet service via API made for laravel developers
 
 [![Latest Version on Packagist](https://img.shields.io/packagist/v/epmnzava/telerivet.svg?style=flat-square)](https://packagist.org/packages/epmnzava/telerivet)
 [![Build Status](https://img.shields.io/travis/epmnzava/telerivet/master.svg?style=flat-square)](https://travis-ci.org/dbrax/telerivet)
