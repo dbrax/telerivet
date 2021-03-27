@@ -33,9 +33,8 @@ class Telerivet extends TelerivetApi
         $this->url=config('telerivet.base_url').''.$this->getProjectIDPath()."/messages/send";
        $response=$this->sendSmsRequest($this->url,$message,$this->authorization);
 
-       $res=new SendSmsResponse($response);
 
-       return $res;
+       return $response;
 
     }
 
