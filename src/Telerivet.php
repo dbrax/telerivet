@@ -23,7 +23,7 @@ class Telerivet extends TelerivetApi
 
 
         $this->project_id=config('telerivet.project_id');
-        $this->authorization=base64_encode($this->project_id. ":" . config("telerivet.api_key"));
+        $this->authorization=base64_encode(config("telerivet.api_key"));
 
         $message=[
             "content"=>$message,
@@ -45,7 +45,7 @@ class Telerivet extends TelerivetApi
     }
 
     public function receivingSms(){
-        
+
     }
 
 }

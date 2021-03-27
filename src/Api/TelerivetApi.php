@@ -13,6 +13,9 @@ class TelerivetApi
     public function sendSmsRequest(string $url,Array $data,$authorization)
     {
 
+
+        $datacontent=$data["content"];
+        $datato=$data["to"];
         $curl = curl_init();
 
         curl_setopt_array($curl, array(
@@ -23,7 +26,7 @@ class TelerivetApi
             CURLOPT_TIMEOUT => 30,
             CURLOPT_HTTP_VERSION => CURL_HTTP_VERSION_1_1,
             CURLOPT_CUSTOMREQUEST => "POST",
-            CURLOPT_POSTFIELDS => "------WebKitFormBoundary7MA4YWxkTrZu0gW\r\nContent-Disposition: form-data; name=\"content\"\r\n\r\n$data->content\r\n------WebKitFormBoundary7MA4YWxkTrZu0gW\r\nContent-Disposition: form-data; name=\"to_number\"\r\n\r\n$data->to\r\n------WebKitFormBoundary7MA4YWxkTrZu0gW--",
+            CURLOPT_POSTFIELDS => "------WebKitFormBoundary7MA4YWxkTrZu0gW\r\nContent-Disposition: form-data; name=\"content\"\r\n\r\n$datacontent\r\n------WebKitFormBoundary7MA4YWxkTrZu0gW\r\nContent-Disposition: form-data; name=\"to_number\"\r\n\r\n$datato\r\n------WebKitFormBoundary7MA4YWxkTrZu0gW--",
             CURLOPT_HTTPHEADER => array(
                 "authorization: Basic ".$authorization,
                 "content-type: multipart/form-data; boundary=----WebKitFormBoundary7MA4YWxkTrZu0gW"
@@ -37,7 +40,7 @@ class TelerivetApi
         curl_close($curl);
 
 
-       return  $response;
+        return  $response;
 
     }
 
