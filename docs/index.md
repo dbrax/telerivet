@@ -1,37 +1,54 @@
-## Welcome to GitHub Pages
+## Telerivet is an innovative mobile messaging platform that instantly connects businesses and organizations with their customers, employees, and community. No servers, programmers, expensive contracts, or shortcodes required
 
-You can use the [editor on GitHub](https://github.com/dbrax/telerivet/edit/main/docs/index.md) to maintain and preview the content for your website in Markdown files.
+## This package helps you to easily get started with integrating with Telerivet service via API made for laravel developers
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
+[![Latest Version on Packagist](https://img.shields.io/packagist/v/epmnzava/telerivet.svg?style=flat-square)](https://packagist.org/packages/epmnzava/telerivet)
+[![Build Status](https://img.shields.io/travis/epmnzava/telerivet/master.svg?style=flat-square)](https://travis-ci.org/dbrax/telerivet)
+[![Quality Score](https://img.shields.io/scrutinizer/g/dbrax/telerivet.svg?style=flat-square)](https://scrutinizer-ci.com/g/dbrax/telerivet)
+[![Total Downloads](https://img.shields.io/packagist/dt/epmnzava/telerivet.svg?style=flat-square)](https://packagist.org/packages/epmnzava/telerivet)
 
-### Markdown
 
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
 
-```markdown
-Syntax highlighted code block
+## Installation
 
-# Header 1
-## Header 2
-### Header 3
+You can install the package via composer:
 
-- Bulleted
-- List
-
-1. Numbered
-2. List
-
-**Bold** and _Italic_ and `Code` text
-
-[Link](url) and ![Image](src)
+```bash
+composer require epmnzava/telerivet
 ```
 
-For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
+## Usage
 
-### Jekyll Themes
+``` php
+// coming soon ...
 
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/dbrax/telerivet/settings). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
 
-### Support or Contact
 
-Having trouble with Pages? Check out our [documentation](https://docs.github.com/categories/github-pages-basics/) or [contact support](https://support.github.com/contact) and we’ll help you sort it out.
+```
+
+### Testing
+
+``` bash
+composer test
+```
+
+### Changelog
+
+Please see [CHANGELOG](CHANGELOG.md) for more information what has changed recently.
+
+## Contributing
+
+Please see [CONTRIBUTING](CONTRIBUTING.md) for details.
+
+### Security
+
+If you discover any security related issues, please email epmnzava@gmail.com instead of using the issue tracker.
+
+## Credits
+
+- [Emmanuel Mnzava](https://github.com/dbrax)
+- [All Contributors](../../contributors)
+
+## License
+
+The MIT License (MIT). Please see [License File](LICENSE.md) for more information.
