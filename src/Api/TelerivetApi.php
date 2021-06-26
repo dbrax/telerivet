@@ -9,8 +9,14 @@ use Epmnzava\Telerivet\Models\SendSmsResponse;
 class TelerivetApi
 {
 
+   
 
-    public function sendSmsRequest(string $url,Array $data,$authorization)
+    public function __construct()
+    {
+        
+    }
+
+    public function sendSmsRequest($url,Array $data,$authorization)
     {
 
 
@@ -19,7 +25,7 @@ class TelerivetApi
         $curl = curl_init();
 
         curl_setopt_array($curl, array(
-            CURLOPT_URL => "https://api.telerivet.com/v1/projects/PJe7f3e7fe7d0ddf20/messages/send",
+            CURLOPT_URL => $url,
             CURLOPT_RETURNTRANSFER => true,
             CURLOPT_ENCODING => "",
             CURLOPT_MAXREDIRS => 10,
