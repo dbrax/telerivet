@@ -19,32 +19,32 @@ class Telerivet extends TelerivetApi
      * @param string $message
      *
      */
-    public function send_sms($recipent,string $message){
+    public function send_sms($recipent, string $message)
+    {
 
 
-        $this->project_id=config('telerivet.project_id');
-        $this->authorization=base64_encode(config("telerivet.api_key"));
+        $this->project_id = config('telerivet.project_id');
+        $this->authorization = base64_encode(config("telerivet.api_key"));
 
-        $message=[
-            "content"=>$message,
-            "to"=>$recipent
+        $message = [
+            "content" => $message,
+            "to" => $recipent
         ];
 
-        $this->url=config('telerivet.base_url').''.$this->getProjectIDPath()."/messages/send";
-       $response=$this->sendSmsRequest($this->url,$message,$this->authorization);
+        $this->url = config('telerivet.base_url') . '' . $this->getProjectIDPath() . "/messages/send";
+        $response = $this->sendSmsRequest($this->url, $message, $this->authorization);
 
 
-       return $response;
-
+        return $response;
     }
 
 
-    public function getProjectIDPath(){
-        return "/projects/".$this->project_id;
+    public function getProjectIDPath()
+    {
+        return "/projects/" . $this->project_id;
     }
 
-    public function receivingSms(){
-
+    public function receivingSms()
+    {
     }
-
 }
