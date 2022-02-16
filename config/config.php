@@ -9,6 +9,8 @@ return [
     "project_id"=>env("TELERIVET_API_ID"),
 
 
-    "base_url"=>"https://api.telerivet.com/v1"
+    "base_url"=>"https://api.telerivet.com/v1",
+    
+    "webhook_secret"=>env('TELERIVET_API_ID')
 
 ];
